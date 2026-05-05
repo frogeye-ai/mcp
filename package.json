@@ -1,0 +1,23 @@
+{
+  "name": "@frogeye/mcp-server",
+  "version": "1.5.17",
+  "description": "Frogeye MCP server — vulnerability knowledge graph for AI coding agents",
+  "main": "index.js",
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "dev": "NODE_ENV=development node index.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "1.12.0",
+    "@upstash/redis": "^1.34.3",
+    "express": "^4.19.2",
+    "node-fetch": "^3.3.2",
+    "pg": "^8.12.0"
+  },
+  "type": "module",
+  "license": "UNLICENSED",
+  "private": true
+}
