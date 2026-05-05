@@ -12,7 +12,26 @@ Frogeye is a security knowledge graph with 24,000+ vulnerability patterns. Conne
 npx @frogeye/connect
 ```
 
-Or add to your Claude Desktop config:
+Or add via Claude Code CLI:
+
+```bash
+claude mcp add --transport http frogeye https://mcp.frogeye.ai/mcp
+```
+
+Or add to your Claude Code project config (`.mcp.json` in project root):
+
+```json
+{
+  "mcpServers": {
+    "frogeye": {
+      "type": "http",
+      "url": "https://mcp.frogeye.ai/mcp"
+    }
+  }
+}
+```
+
+Or add to your Claude Desktop config (`claude_desktop_config.json`):
 
 ```json
 {
